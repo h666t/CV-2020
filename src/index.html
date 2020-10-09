@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+    @media print {
+      #skills{display:none;}
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+      .jobs header{
+        flex-direction: column;
+      }
+      .jobs header >h3,
+      .jobs header >h4,
+      .jobs header >span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<article>
+  <section class="bio">
+    <h1>黄昊天</h1>
+    <img src="https://i.loli.net/2020/10/08/diYJ5Bh1zn4EfXa.jpg" alt="" width="71" height="100">
+    <p>
+      男 | 22岁 | 前端开发工程师 | 上海
+    </p>
+    <p>
+      手机：13524002718 | 微信：13524002718 | 邮箱：1845720928@qq.com
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>技能</h2>
+    <div class="wrapper">
+      <div id="skills" style="display: none"></div>
+      <ul>
+        <li>熟悉页面制作技巧，能将设计稿<strong> 完美还原 </strong> </li>
+        <li>熟悉常用的CSS布局，例如 <strong> flex </strong> ， <strong> float </strong> , <strong> grid </strong> 等</li>
+        <li>熟练掌握 <strong> Vue全家桶 </strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+        <li>熟练掌握 <strong> React全家桶 </strong>的使用，包括 create-react-app、ReactRouter、Redux 等</li>
+        <li>熟练掌握 <strong> git </strong> 的常用技巧</li>
+        <li>熟悉 <strong>ES6</strong>，包括 let / Promise / await / 析构赋值 等等</li>
+        <li>熟悉<strong> 移动端适配 </strong></li>
+        <li>熟悉<strong> PS </strong>,<strong> AI </strong>，<strong> PR </strong>等常用多媒体工具</li>
+        <li>了解 <strong> TypeScript </strong> 的使用，我的项目就是 TS 实现的</li>
+        <li>了解 <strong> Webpack 的配置和优化 </strong></li>
+        <li>了解<strong> 前后端分离 </strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>项目经历</h2>
+    <ol>
+      <li>
+        <header>
+          <h3>极简记帐-React版</h3>
+          <span>
+              <a href="https://github.com/h666t/tally-react">源码链接</a>
+              <a href="https://www.yuque.com/original-cdkpe/oz1d6t/ta30yx">项目预览</a>
+            </span>
+        </header>
+        <br/>
+        <h4>使用技术</h4>
+        <p>
+          React，
+          React-Router，
+          <strong>TypeScript</strong>，
+          Webpack，
+          <strong>Echarts</strong>，
+          <strong>自定义 Hooks</strong>，
+          localStorage，
+          svg Icon
+        </p>
+          <br/>
+          <h4>项目描述</h4>
+        <p>
+          本项目使用 React-Router 构建，通过<strong>模块化</strong>思想，实现了复杂的标签管理，通过 useReducer + localStorage + Echarts 实现了数据的统计与展示，
+          使用 day.js 实现了时间的管理。
+        </p>
+        <p>
+          该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
+        </p>
+      </li>
+      <li>
+        <header>
+          <h3>极简记帐-Vue版</h3>
+          <span>
+              <a href="https://github.com/h666t/tally">源码链接</a>
+              <a href="http://huang-haotian.gitee.io/tally-vue/">项目预览</a>
+            </span>
+        </header>
+        <br>
+        <h4>使用技术</h4>
+        <p>
+          Vue，
+          Vue-Router，
+          <strong>TypeScript</strong>，
+          <strong>Vuex</strong>，
+          Webpack，
+          <strong>Echarts</strong>，
+          localStorage，
+          svg Icon
+        </p>
+        <br>
+        <h4>项目描述</h4>
+        <p>
+          本项目是一款极简记账产品，也是一款基于 Vue 、 VueRouter的单页面应用，由本人独立设计及实现。源代码几乎完全用<strong>TypeScript</strong>
+          实现。
+        </p>
+        <p>
+          本项目实现了记账、标签管理、数据统计及<strong>可视化</strong>，对内部常用代码进行<strong>封装</strong>实现复用。
+        </p>
+      </li>
+
+      <li>
+        <header>
+          <h3>Search搜索</h3>
+          <span>
+              <a href="https://github.com/h666t/search">源码链接</a>
+              <a href="http://huang-haotian.gitee.io/search/">项目预览</a>
+            </span>
+        </header>
+        <br>
+        <h4>使用技术</h4>
+        <p>
+          <strong>JQuery</strong>，
+          <strong>正则表达式</strong>，
+          localStorage
+        </p>
+        <p>
+          由于市面上的搜索引擎大多过于臃肿，所以我写了一个Search搜索<strong>给自己用</strong>，目前是我的浏览器首页，它即可以跳转至 百度 / 谷歌 / 自定义网站，还绑定了键盘事件，可以点击快捷键跳转至相应的页面。同时还适配了移动端和PC。
+        </p>
+      </li>
+
+      <li>
+        <header>
+          <h3>Canvas画板</h3>
+          <span>
+              <a href="https://github.com/h666t/canvas">源码链接</a>
+              <a href="http://huang-haotian.gitee.io/canvas/">项目预览</a>
+            </span>
+        </header>
+        <br>
+        <p>
+          这是我在学习<strong>Canvas</strong> 和 <strong>原生JS</strong> 的时候做的一个画板小工具。
+        </p>
+        </li>
+      <li>
+        <header>
+          <h3>会动的代码</h3>
+          <span>
+              <a href="https://github.com/h666t/Gastly">源码链接</a>
+              <a href="http://huang-haotian.gitee.io/gastly/">项目预览</a>
+            </span>
+        </header>
+        <br>
+        <p>
+          这是我在学习<strong>JQuery</strong> 和 <strong>CSS</strong> 的时候做的一个小项目,以动态的形式将将图像展示出来。适配移动端和PC。
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="openSource">
+    <h2>开源项目</h2>
+    <ul>
+      <li>
+        <header>
+          <h3>自己写的 DOM 库</h3>
+          <a href="https://github.com/h666t/dom-1">源码链接</a>
+        </header>
+        <p>这是我在学习 <strong>DOM</strong> 的时候封装的一个库，实现了元素创建、添加 父 / 子 元素 等常见功能，还通过<strong>重载</strong>，实现了添加样式的功能。</p>
+      </li>
+      <li class="page2">
+        <header>
+          <h3>自己写的 JQuery 库</h3>
+          <span>
+              <a href="https://github.com/h666t/dom-2">源码链接</a>
+            </span>
+        </header>
+        <p>这是我在学习 <strong>JQuery</strong> 时封装的一个库，实现了 创建元素、操作 父 / 子 元素等常见功能，还实现了JQuery的<strong>链式操作</strong>。</p>
+      </li>
+      <li>
+        <header>
+          <h3>translation 翻译</h3>
+          <span>
+              <a href="https://github.com/h666t/translation">源码链接</a>
+          </span>
+        </header>
+        <p>通过 <strong>node.js</strong> 和 <strong>commander</strong> 实现的一个命令行翻译小工具，方便我在命令行中快速翻译一些英语单词。</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="others">
+    <h2>其他链接</h2>
+    <ul>
+      <li><a href="https://juejin.im/user/676954895297319/posts">我的博客</a>，目前已有 61 篇技术文章</li>
+      <li><a href="https://github.com/h666t">我的 GitHub</a>，过去六个月近 300 次提交</li>
+    </ul>
+  </section>
+
+  <section class="jobs">
+    <h2>工作经历</h2>
+    <ol>
+      <li>
+        <header>
+          <h3>上海旺旺食品集团有限公司</h3>
+          <h4>行销企划（市场部）</h4>
+          <span><time>2019年6月</time>~<time>2020年3月</time></span>
+        </header>
+      </li>
+      <li>
+        <header>
+          <h3>上海塔盟网络科技有限公司</h3>
+          <h4>通信维护工程师</h4>
+          <span><time>2020年4月</time>~<time>至今</time></span>
+        </header>
+      </li>
+    </ol>
+  </section>
+
+  <section class="education">
+    <h2>教育经历</h2>
+    <p>
+      <span><time>2016年</time>~<time>2019年</time></span>
+      上海印刷高等专科学校 出版商务 大专</p>
+  </section>
+
+</article>
+<script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+<script src="./main.js"></script>
+</body>
+
+</html>
